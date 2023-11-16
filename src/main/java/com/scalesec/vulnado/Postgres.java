@@ -19,7 +19,7 @@ public class Postgres {
                     .append(System.getenv("PGHOST"))
                     .append("/")
                     .append(System.getenv("PGDATABASE")).toString();
-            return DriverManager.getConnection(url,
+/* return DriverManager.getConnection(url,
                     System.getenv("PGUSER"), System.getenv("PGPASSWORD"));
         } catch (Exception e) {
             e.printStackTrace();
@@ -50,7 +50,8 @@ public class Postgres {
             insertUser("rick", "!GetSchwifty!");
 
             insertComment("rick", "cool dog m8");
-            insertComment("alice", "OMG so cute!");
+            insertComment("alice", "OMG so cute!"); */ 
+            
             c.close();
         } catch (Exception e) {
             System.out.println(e);
